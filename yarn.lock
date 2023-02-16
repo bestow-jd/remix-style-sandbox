@@ -7167,6 +7167,11 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
+"rainbow-sprinkles@^0.15.2":
+  "integrity" "sha512-yIp9g9C64sJLLVz0MDyWr+G/lXfnU+GZzK/LTm/dL0Fz0FbnaVkHq1uS9nA1F3S6MxLvFrsI5uXj4/ExqBtw9w=="
+  "resolved" "https://registry.npmjs.org/rainbow-sprinkles/-/rainbow-sprinkles-0.15.2.tgz"
+  "version" "0.15.2"
+
 "range-parser@~1.2.1":
   "integrity" "sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg=="
   "resolved" "https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz"
