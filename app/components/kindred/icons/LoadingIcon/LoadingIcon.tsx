@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 import React, { forwardRef } from "react";
-import { spin } from "~/components/LoadingIcon/LoadingIcon.css";
+import { spin } from "./LoadingIcon.css";
 
 const LoadingIcon = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
   (props: SVGProps<SVGSVGElement>, ref) => {

@@ -2032,6 +2032,13 @@
     "media-query-parser" "^2.0.2"
     "outdent" "^0.8.0"
 
+"@vanilla-extract/dynamic@^2.0.3":
+  "integrity" "sha512-Rglfw2gXAYiBzAQ4jgUG7rBgE2c88e/zcG27ZVoIqMHVq56wf2C1katGMm1yFMNBgzqM7oBNYzz4YOMzznydkg=="
+  "resolved" "https://registry.npmjs.org/@vanilla-extract/dynamic/-/dynamic-2.0.3.tgz"
+  "version" "2.0.3"
+  dependencies:
+    "@vanilla-extract/private" "^1.0.3"
+
 "@vanilla-extract/integration@^6.0.2":
   "integrity" "sha512-7gDkOibk/DraG35ZpiAYqWd33wLA6YRnieC5vw7ItoFEzCv9bUaS9c+ZyktyWW3nRnL+e7Pc6FS6l7MKgEsX1w=="
   "resolved" "https://registry.npmjs.org/@vanilla-extract/integration/-/integration-6.1.0.tgz"

@@ -1,10 +1,10 @@
-import { purpleThemeClass } from "./theme-style.css";
+import { blueThemeClass } from "./theme-style.css";
 import { buttonBase, buttonVariants } from "./components.css";
 
-export const PURPLE_THEME = {
-  name: "Purple Theme",
-  key: "PURPLE_THEME",
-  class: purpleThemeClass,
+export const BLUE_THEME = {
+  name: "Blue Theme",
+  key: "BLUE_THEME",
+  class: blueThemeClass,
   components: {
     button: {
       base: buttonBase,

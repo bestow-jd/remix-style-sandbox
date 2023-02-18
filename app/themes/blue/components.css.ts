@@ -2,11 +2,11 @@ import { theme } from "../contract.css";
 import { style, styleVariants } from "@vanilla-extract/css";
 
 export const buttonBase = style({
-  borderRadius: "6px",
-  borderWidth: "2px",
+  borderRadius: "14px",
+  borderWidth: "3px",
   borderStyle: "solid",
   transition: "background 150ms ease-in-out",
-  padding: "14px 40px 12px",
+  padding: "30px 40px",
   ":disabled": {
     color: theme.color.text.disabled,
     fill: theme.color.text.disabled,
@@ -22,12 +22,9 @@ export const buttonVariants = styleVariants({
       color: theme.color.text.onColor,
       fill: theme.color.text.onColor,
       backgroundColor: theme.color.interaction.primary.default,
-      boxShadow: "0 16px 16px -16px rgba(0, 0, 0, .56)",
-      // hover
       ":hover": {
         backgroundColor: theme.color.interaction.primary.hover,
       },
-      // active
       ":active": {
         backgroundColor: theme.color.interaction.primary.pressed,
       },

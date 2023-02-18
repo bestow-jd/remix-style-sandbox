@@ -6,5 +6,7 @@ const rotate = keyframes({
 });
 
 export const spin = style({
-  animation: `${rotate} 1.5s infinite linear`
+  ":hover": {
+    animation: `${rotate} 1s infinite linear`,
+  },
 });

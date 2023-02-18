@@ -1,5 +1,5 @@
 export type ColorShade = {
-  0?: string;
+  0: string;
   50: string;
   100: string;
   200: string;
@@ -12,12 +12,40 @@ export type ColorShade = {
   900: string;
 };
 
-export type ThemeTokens = {
-  colors: {
-    primaryCTA: ColorShade;
-    neutral: ColorShade;
-    blue: ColorShade;
-  };
+export type ColorTokens = {
+  primaryCTA: ColorShade;
+  neutral: ColorShade;
+  blue: ColorShade;
+};
+
+export const baseSpacingScale = {
+  2: "2px",
+  4: "4px",
+  6: "6px",
+  8: "8px",
+  10: "10px",
+  12: "12px",
+  14: "14px",
+  16: "16px",
+  18: "18px",
+  20: "20px",
+  24: "24px",
+  28: "28px",
+  32: "32px",
+  36: "36px",
+  40: "40px",
+  44: "44px",
+  48: "48px",
+  52: "52px",
+  56: "56px",
+  60: "60px",
+  64: "64px",
+  96: "96px",
+  112: "112px",
+  136: "136px",
+  144: "144px",
+  160: "160px",
+  176: "176px",
 };
 
 export const baseColorTokens = {
@@ -35,6 +63,7 @@ export const baseColorTokens = {
     900: "#282624",
   },
   blue: {
+    0: "#FFFFFF",
     50: "#F5F7F7",
     100: "#E9F0F1",
     200: "#D5EBEF",
@@ -46,49 +75,63 @@ export const baseColorTokens = {
     800: "#0C5561",
     900: "#0B3541",
   },
+  red: {
+    0: "#ffffff",
+    50: "#FEF6F6",
+    100: "#FCE4E3",
+    200: "#F6BCB6",
+    300: "#F09D94",
+    400: "#E87F73",
+    500: "#CB1D15",
+    600: "#B71A13",
+    700: "#A21711",
+    800: "#8D140E",
+    900: "#78110C",
+  },
 };
 
-export const buildBaseColorMappings = (tokens: ThemeTokens) => ({
+export const buildBaseColorMappings = (tokens: ColorTokens) => ({
   interaction: {
-    focus: tokens.colors.primaryCTA["600"],
-    disabled: tokens.colors.neutral["300"],
+    focus: tokens.primaryCTA["600"],
+    disabled: tokens.neutral["300"],
     primary: {
-      default: tokens.colors.primaryCTA["600"],
-      hover: tokens.colors.primaryCTA["400"],
-      pressed: tokens.colors.primaryCTA["800"],
+      default: tokens.primaryCTA["600"],
+      hover: tokens.primaryCTA["400"],
+      pressed: tokens.primaryCTA["800"],
     },
     secondary: {
-      border: tokens.colors.primaryCTA["800"],
-      hover: tokens.colors.primaryCTA["200"],
-      pressed: tokens.colors.primaryCTA["400"],
+      border: tokens.primaryCTA["800"],
+      hover: tokens.primaryCTA["200"],
+      pressed: tokens.primaryCTA["400"],
     },
     tertiary: {
-      hover: tokens.colors.neutral["200"],
-      pressed: tokens.colors.neutral["400"],
-      selected: tokens.colors.primaryCTA["200"],
+      hover: tokens.neutral["200"],
+      pressed: tokens.neutral["400"],
+      selected: tokens.primaryCTA["200"],
     },
   },
   text: {
-    heading: tokens.colors.blue["900"],
-    default: tokens.colors.neutral["900"],
-    subdued: tokens.colors.neutral["700"],
-    disabled: tokens.colors.neutral["500"],
-    onColor: tokens.colors.neutral["0"],
-    action: tokens.colors.primaryCTA["800"],
-    hover: tokens.colors.primaryCTA["600"],
-    pressed: tokens.colors.primaryCTA["700"],
+    heading: tokens.blue["900"],
+    default: tokens.neutral["900"],
+    subdued: tokens.neutral["700"],
+    disabled: tokens.neutral["500"],
+    onColor: tokens.neutral["0"],
+    action: tokens.primaryCTA["800"],
+    hover: tokens.primaryCTA["600"],
+    pressed: tokens.primaryCTA["700"],
   },
   border: {
-    onColor: tokens.colors.neutral["0"],
-    default: tokens.colors.neutral["400"],
-    activated: tokens.colors.neutral["700"],
-    selected: tokens.colors.primaryCTA["600"],
-    brand: tokens.colors.blue["900"],
+    onColor: tokens.neutral["0"],
+    default: tokens.neutral["400"],
+    activated: tokens.neutral["700"],
+    selected: tokens.primaryCTA["600"],
+    brand: tokens.blue["900"],
   },
   background: {
-    default: tokens.colors.neutral["0"],
-    surface1: tokens.colors.neutral["50"],
-    surface2: tokens.colors.neutral["200"],
-    brand: tokens.colors.blue["900"],
+    default: tokens.neutral["0"],
+    surface1: tokens.neutral["50"],
+    surface2: tokens.neutral["200"],
+    brand: tokens.blue["900"],
+    accent: tokens.primaryCTA["600"],
   },
 });
