@@ -1,5 +1,5 @@
 import { purpleThemeClass } from "./theme-style.css";
-import { buttonBase, buttonVariants } from "./components.css";
+import { buttonBase, buttonVariants, inputs } from "./components.css";
 
 export const PURPLE_THEME = {
   name: "Purple Theme",
@@ -10,5 +10,6 @@ export const PURPLE_THEME = {
       base: buttonBase,
       variants: buttonVariants,
     },
+    inputs: inputs,
   },
 };

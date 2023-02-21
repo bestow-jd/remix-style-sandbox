@@ -1,5 +1,6 @@
 import { theme } from "../contract.css";
 import { style, styleVariants } from "@vanilla-extract/css";
+import { recipe } from "@vanilla-extract/recipes";
 
 export const buttonBase = style({
   borderRadius: "6px",
@@ -59,3 +60,30 @@ export const buttonVariants = styleVariants({
     },
   ],
 });
+
+export const inputs = {
+  labelStyles: style({
+    height: "48px",
+    borderWidth: 1,
+    borderColor: theme.color.border.default,
+    borderRadius: 6,
+    backgroundColor: theme.color.background.default,
+    ":hover": {
+      outlineWidth: "1px",
+      outlineColor: theme.color.interaction.primary.hover,
+      borderColor: theme.color.interaction.primary.hover,
+    },
+    ":focus-within": {
+      outlineWidth: "1px",
+      outlineColor: theme.color.interaction.focus,
+      borderColor: theme.color.interaction.focus,
+    },
+  }),
+  inputStyles: style({
+    margin: 16,
+    marginBottom: 12,
+    marginTop: 14,
+    caretColor: theme.color.primaryCTA["800"],
+    color: theme.color.neutral["900"],
+  }),
+};

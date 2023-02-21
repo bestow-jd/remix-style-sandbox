@@ -8,6 +8,7 @@ import { card } from "~/components/styles/card.css";
 import { spacing } from "~/components/sprinkles/spacing.css";
 import { ProgressBar } from "~/components/kindred/ProgressBar/ProgressBar";
 import { useState } from "react";
+import { TextInput } from "~/components/kindred/Input/TextInput";
 
 export default function Index() {
   const [progress, setProgress] = useState(50);
@@ -38,8 +39,7 @@ export default function Index() {
             Primary
           </Button>
           <Button variant="outline">Outline</Button>
-          <input
-            type="number"
+          <TextInput
             value={progress}
             style={{ width: "100%" }}
             onChange={(e) => {
@@ -47,6 +47,8 @@ export default function Index() {
             }}
           />
           <ProgressBar percent={progress} />
+
+          <ProgressBar percent={50} />
         </div>
       </div>
     </main>

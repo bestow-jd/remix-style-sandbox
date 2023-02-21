@@ -1,9 +1,12 @@
-import { createVar, style } from "@vanilla-extract/css";
+import { style } from "@vanilla-extract/css";
 
-export const topSpacingVar = createVar();
-
-export const wrapperStyle = style({});
-
-export const labelStyle = style({});
-
-export const inputStyle = style({});
+export const defaultLabelStyles = style({
+  borderStyle: "solid",
+  boxSizing: "border-box",
+  width: "100%",
+});
+export const defaultInputStyles = style({
+  border: "none",
+  outline: "none",
+  boxSizing: "border-box",
+});
